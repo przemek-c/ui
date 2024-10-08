@@ -13,6 +13,7 @@
 
 .navigation {
   grid-area: nav;
+  background-color: aqua;
 }
 
 .sidebar {
@@ -37,7 +38,8 @@
   background-color: coral;
 }
 
-
+/* below dev code*/
+/*
 
 .App-logo {
   height: 40vmin;
@@ -71,5 +73,16 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+*/
+/* below my code*/
+@media screen and (orientation: portrait) and (max-width: 768px) {
+  .App {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "nav"
+      "content";
   }
 }
